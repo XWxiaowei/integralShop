@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title></title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../assets/css/hewoxin.min.css"/>
+</head>
+<body>
+<div class="module_top">
+    <div class="header">
+        <span>修改收货人</span>
+        <a class="save-btn" id="new-btn">保存</a>
+    </div>
+</div>
+<form class="form-inline form">
+    <div class="form-group bordered">
+        <label class="form-label">收货人</label>
+        <input class="form-control" type="text" id="bind-name" placeholder="输入收货人姓名">
+    </div>
+    <div class="form-group bordered">
+        <label class="form-label">性别</label>
+        <span class="radio-wrap mr-40">
+            <input type="radio" name="sex" id="radio_1" >
+            <label class="radio-input"  for="radio_1"></label>
+            先生
+        </span>
+        <span class="radio-wrap">
+            <input type="radio" name="sex" id="radio_2" >
+            <label class="radio-input" for="radio_2"></label>
+            女士
+        </span>
+    </div>
+    <div class="form-group bordered">
+        <label class="form-label">收货手机</label>
+        <input type="text" class="form-control" id="bind-tel" maxlength="11" placeholder="输入收货人手机号">
+    </div>
+    <div class="form-group bordered">
+        <label class="form-label">地址</label>
+        <input type="text" class="form-control" id="bind-addr" placeholder="请填写详细地址">
+    </div>
+</form>
+
+<div id="bind-telTip"></div>
+
+<div id="popup_new" class="modal fade text-center" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p class="tip-font">是否确认新建？</p>
+            </div>
+            <div class="modal-footer">
+                <a data-dismiss="modal">
+                    <span class="col-xs-6 text-center styleBtn confirm" style="float:left;">确 定</span>
+                </a>
+                <a data-dismiss="modal">
+                    <span class="col-xs-6 text-center styleBtn close-font cancel">取 消</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/js/zepto.min.js"></script>
+
+<script>
+    //    var ctx = "${contextPath}";
+    var ctx = 'http://mock.cqb325.cn/mock/gridlottery';
+    //var ctx = 'http://192.168.170.16:8415/mock/gridlottery';
+    //    var baseUrl = "http://wx.4ggogo.com/lottery/assets/imgs/";
+    var baseUrl = "../assets/imgs/";
+</script>
+<script src="../assets/js/alterAddr.min.js"></script>
+<script src="../assets/js/address.min.js"></script>
+</body>
+<script src="../assets/js/modal.min.js"></script>
+</html>

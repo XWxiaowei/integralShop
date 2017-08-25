@@ -1,0 +1,32 @@
+/**
+ * Created by yovino on 2016/8/5.
+ */
+(function(){
+    var orderNum = $('.count input').val();
+    var perPrice = $('#per_price').text();
+    var perFlow = $('#per_flow').text();
+    var totalPrice = 0,totalFlow = 0;
+    console.log(orderNum);
+    console.log(perPrice);
+    $('.plus').on("tap", function(){
+        orderNum ++;
+        updatePrice();
+    });
+    $('.minus').on("tap", function(){
+        orderNum --;
+        if(orderNum === 0 || orderNum < 0){
+            orderNum = 0;
+        }
+        updatePrice();
+    });
+
+    function updatePrice(){
+         $('.count input').attr("value",orderNum);
+        totalPrice = perPrice * orderNum;
+        totalFlow = perFlow * orderNum;
+        $('#total_price1').html(totalPrice);
+        $('#total_flow').html(totalFlow);
+        $('#total_price2').html(totalPrice);
+        $('#total_count').html(orderNum);
+    }
+})();

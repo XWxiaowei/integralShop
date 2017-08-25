@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title></title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../assets/css/hewoxin.min.css"/>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="col-xs-12 item">
+                <p class="col-xs-4">收货人：</p><input type="text" class="col-xs-8" id="bind-name">
+                <label id="bind-nameTip"></label>
+                <div class="row" style="margin-left: 30%;">
+                    <div class="col-xs-4 sex">
+                        <input type="radio" name="sex" id="male">
+                        <label for="male">男士</label>
+                    </div>
+                    <div class="col-xs-4 sex">
+                        <input type="radio" name="sex" id="female">
+                        <label for="female">女士</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="col-xs-12 item">
+                <p class="col-xs-4">收货手机：</p><input type="text" class="col-xs-8" id="bind-tel" maxlength="11">
+                <label id="bind-telTip"></label>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="col-xs-12 item">
+                <p class="col-xs-4">地址：</p><input type="text" class="col-xs-8" id="bind-addr">
+                <label id="bind-addrTip"></label>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 addr_btn">
+            <div class="col-xs-6  text-center">
+                <input type="button" class="btn btn-danger" value="确定" id="bind-btn">
+            </div>
+            <div class="col-xs-6  text-center">
+                <input type="button" class="btn btn-default" value="删除" id="delete-btn">
+            </div>
+        </div>
+    </div>
+</div>
+<div id="popup" class="modal fade text-center" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p class="tip-font del">是否确认删除？</p>
+                <p class="tip-font mod">是否确认修改？</p>
+            </div>
+            <a data-dismiss="modal">
+                <div class="col-xs-6 text-center styleBtn confirm" style="float:left;">确 定</div>
+            </a>
+            <a data-dismiss="modal">
+                <div class="col-xs-6 text-center styleBtn close-font cancel">取 消</div>
+            </a>
+        </div>
+    </div>
+</div>
+<script src="../assets/js/zepto.min.js"></script>
+
+<script>
+    //    var ctx = "${contextPath}";
+    var ctx = 'http://mock.cqb325.cn/mock/gridlottery';
+    //var ctx = 'http://192.168.170.16:8415/mock/gridlottery';
+    //    var baseUrl = "http://wx.4ggogo.com/lottery/assets/imgs/";
+    var baseUrl = "../assets/imgs/";
+</script>
+<script src="../assets/js/alterAddr.min.js"></script>
+<script src="../assets/js/address.min.js"></script>
+</body>
+<script src="../assets/js/modal.min.js"></script>
+</html>

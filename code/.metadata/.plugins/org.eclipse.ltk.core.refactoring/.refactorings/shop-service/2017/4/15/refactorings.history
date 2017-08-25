@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.shop.service.admin.AdministerService1&apos; to &apos;AdministerService&apos;&#x0D;&#x0A;- Original project: &apos;shop-service&apos;&#x0D;&#x0A;- Original element: &apos;com.shop.service.admin.AdministerService1&apos;&#x0D;&#x0A;- Renamed element: &apos;com.shop.service.admin.AdministerService&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;AdministerService1&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;com.shop.service.admin{AdministerService1.java[AdministerService1" matchStrategy="1" name="AdministerService" qualified="false" references="true" similarDeclarations="false" stamp="1492261299420" textual="false" version="1.0"/>
+</session>

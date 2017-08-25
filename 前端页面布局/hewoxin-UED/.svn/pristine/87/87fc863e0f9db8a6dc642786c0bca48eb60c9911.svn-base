@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title></title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../assets/css/hewoxin.min.css"/>
+</head>
+<body>
+<div>
+    <div class="row module_top">
+        <div class="header">
+            <span>商品订单</span>
+        </div>
+    </div>
+    <div class="order_list">
+        <ul class="list-group" style="margin-bottom: 0">
+            <li class="list-item">
+                <div class="row border_bottom line" style="font-size: 13px;">
+                    <div class="col-xs-8">订单号：1123344343</div>
+                    <div class="col-xs-4 text-right status big">可使用</div>
+                </div>
+                <a href="orderDetail.html" style="display:block;padding: 10px 0 4px;">
+                    <div class="prod_img text-center">
+                        <img src="../assets/imgs/more.PNG">
+                    </div>
+                    <div class="prod_into">
+                        <p class="prod-title" style="font-size: 15px;">阳光牛奶线上预订电子券（100元）</p>
+                        <p class="prod-expr">使用范围：阳光牛奶-天目山路店</p>
+                        <p class="prod-expr">优惠信息：赠送<span id="per_flow">100</span>流量币</p>
+                        <p class="prod-expr">有效期：2016/7/20-2017/7/20</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="buyer_info">
+        <p>下单时间：2016.6.18 15:13:56</p>
+        <p>支付时间：2016.6.18 15:13:56</p>
+        <p>发货时间：2016.6.18 15:13:56</p>
+    </div>
+
+    <div class="buyer_info">
+        <div>
+            <p>单价：95元</p>
+            <p>购买数量：2</p>
+            <p>合计：<span style="font-size: 16px">190.00</span><span
+                    style="color:#898989; margin-left:5px;">（赠送200流量币）</span></p>
+        </div>
+    </div>
+
+    <div class="buyer_info">
+        <div>
+            <p>收货人：张三</p>
+            <p>收货手机号：13222222233</p>
+            <p>电子券收货信息：</p>
+            <p style="color: #898989;">电子券信息将在付款后自动发送到您的收货手机号，如果24小时内未收到，请联系本系统客服。</p>
+        </div>
+    </div>
+    <div class="row fixed-row-backdrop">
+
+    </div>
+    <div class="row" id="fixed-row">
+        <div class="module_pay">
+            <div class="topay">
+                <div class="btn-cancel" id="btn_cancel">取消订单</div>
+                <div class="btn-topay" id="btn_success">立即支付</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="popup_cancel" class="modal fade text-center" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p class="tip-font">确认取消订单？</p>
+            </div>
+            <div class="modal-footer">
+                <a data-dismiss="modal">
+                    <span class="col-xs-6 text-center styleBtn confirm">确 定</span>
+                </a>
+                <a data-dismiss="modal">
+                    <span class="col-xs-6 text-center styleBtn close-font cancel">取 消</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/zepto.min.js"></script>
+
+<script>
+    //    var ctx = "${contextPath}";
+    var ctx = 'http://mock.cqb325.cn/mock/gridlottery';
+    //var ctx = 'http://192.168.170.16:8415/mock/gridlottery';
+    //    var baseUrl = "http://wx.4ggogo.com/lottery/assets/imgs/";
+    var baseUrl = "../assets/imgs/";
+</script>
+<script src="../assets/js/address.min.js"></script>
+<script src="../assets/js/modal.min.js"></script>
+</body>
+</html>

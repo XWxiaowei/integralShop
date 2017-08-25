@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title></title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../assets/css/hewoxin.min.css"/>
+</head>
+<body>
+<div>
+    <div class="module_top">
+        <div class="header">
+            <span>电子券详情</span>
+        </div>
+    </div>
+    <div class="text-center"><img src="../assets/imgs/detail.PNG" class="shadow"></div>
+    <div class="list-item">
+        <div class="prod_into">
+            <p class="prod-title">沃尔玛50元购物卡<span
+                    class="prod_price" style="float: right;font-weight: normal;">￥47.00</span></p>
+            <p class="prod-expr">优惠信息：<span class="present">赠送50流量币</span><span class="cost_price" style="float: right;">￥50.00</span></p>
+            <p class="prod-expr" style="line-height: 23px;"><img src="../assets/imgs/pot.png">使用范围：阳光牛奶-天目山路店</p>
+        </div>
+    </div>
+    <div class="list-item">
+        <div class="prod_into">
+            <div class="prod-expr"><img src="../assets/imgs/time.png">有效期：2016/7/20-2017/7/20</div>
+        </div>
+    </div>
+    <div class="detail">
+        <div class="list-item">
+            <div class="prod_into">
+                <div class="prod-title">商品详情</div>
+            </div>
+        </div>
+        <div class="list-item">
+            <div class="prod_into">
+                <p class="prod-expr" style="line-height: 23px;">
+                    1.电子卷不与商家其他优惠同时享受。<br>
+                    2.使用时间9:00-22:00，可打包。<br>
+                    3.本卷下发之日起一年内有效，节假日通用，过期作废。<br>
+                    4.购买成功后，专用电子卷将发至您的和包账户中(如您未开通和包账户，将为您自动开通），并下发通知短信，请注意查收！
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="fixed-row-backdrop">
+
+    </div>
+    <div id="fixed-row">
+        <div class="module_pay">
+            <div class="pay_detail pull-left">
+                <p class="price">￥47.00<span class="remain">已售:5000<span style="margin-left: 10px;">库存：998</span></p>
+            </div>
+            <a href="pay.html" class="pull-right pay-btn">
+                <div class="pay_btn text-center">立即购买</div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/zepto.min.js"></script>
+
+<script>
+    //    var ctx = "${contextPath}";
+    var ctx = 'http://mock.cqb325.cn/mock/gridlottery';
+    //var ctx = 'http://192.168.170.16:8415/mock/gridlottery';
+    //    var baseUrl = "http://wx.4ggogo.com/lottery/assets/imgs/";
+    var baseUrl = "../assets/imgs/";
+</script>
+
+</body>
+</html>

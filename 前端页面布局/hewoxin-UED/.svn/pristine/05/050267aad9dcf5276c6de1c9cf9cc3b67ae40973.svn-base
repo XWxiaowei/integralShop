@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title></title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../assets/css/hewoxin.min.css"/>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row module_top">
+        <div class="row">
+            <div class="col-xs-2 text-center">
+
+            </div>
+            <div class="col-xs-8" style="position: relative">
+                <input type="search" placeholder="热门搜索：超市">
+                <span class="icon_search"><img src="../assets/imgs/search.png"></span>
+            </div>
+        </div>
+    </div>
+    <div class="row module_select">
+        <div class="col-xs-12">
+            <select class="col-xs-4">
+                <option>分类</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+            <select class="col-xs-4">
+                <option>排序</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </div>
+    </div>
+    <div class="prod_list">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <a href="detail.html">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img src="../assets/imgs/more.PNG">
+                        </div>
+                        <div class="col-xs-8 prod_into">
+                            <p class="prod-title">沃尔玛超市100元代金券</p>
+                            <p class="prod-expr">有效期：2016/7/20-2017/7/20</p>
+                            <p class="text-right prod_prize">￥95</p>
+                        </div>
+                        <div class="col-xs-12 text-right yh-text">
+                            优惠信息：赠送100流量币
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a href="detail.html">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img src="../assets/imgs/more.PNG">
+                        </div>
+                        <div class="col-xs-8 prod_into">
+                            <p class="prod-title">沃尔玛超市50元代金券</p>
+                            <p class="prod-expr">有效期：2016/7/20-2017/7/20</p>
+                            <p class="text-right prod_prize">￥47</p>
+                        </div>
+                        <div class="col-xs-12 text-right yh-text">
+                            优惠信息：赠送50流量币
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a href="detail.html">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img src="../assets/imgs/more.PNG">
+                        </div>
+                        <div class="col-xs-8 prod_into">
+                            <p class="prod-title">沃尔玛超市10元代金券</p>
+                            <p class="prod-expr">有效期：2016/7/20-2017/7/20</p>
+                            <p class="text-right prod_prize">￥9</p>
+                        </div>
+                        <div class="col-xs-12 text-right yh-text">
+                            优惠信息：赠送10流量币
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a href="detail.html">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img src="../assets/imgs/more.PNG">
+                        </div>
+                        <div class="col-xs-8 prod_into">
+                            <p class="prod-title">沃尔玛超市10元代金券</p>
+                            <p class="prod-expr">有效期：2016/7/20-2017/7/20</p>
+                            <p class="text-right prod_prize">￥9</p>
+                        </div>
+                        <div class="col-xs-12 text-right yh-text">
+                            优惠信息：赠送10流量币
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a href="detail.html">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img src="../assets/imgs/more.PNG">
+                        </div>
+                        <div class="col-xs-8 prod_into">
+                            <p class="prod-title">沃尔玛超市10元代金券</p>
+                            <p class="prod-expr">有效期：2016/7/20-2017/7/20</p>
+                            <p class="text-right prod_prize">￥9</p>
+                        </div>
+                        <div class="col-xs-12 text-right yh-text">
+                            优惠信息：赠送10流量币
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a href="detail.html">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img src="../assets/imgs/more.PNG">
+                        </div>
+                        <div class="col-xs-8 prod_into">
+                            <p class="prod-title">沃尔玛超市10元代金券</p>
+                            <p class="prod-expr">有效期：2016/7/20-2017/7/20</p>
+                            <p class="text-right prod_prize">￥9</p>
+                        </div>
+                        <div class="col-xs-12 text-right yh-text">
+                            优惠信息：赠送10流量币
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script src="../assets/js/zepto.min.js"></script>
+
+<script>
+    //    var ctx = "${contextPath}";
+    var ctx = 'http://mock.cqb325.cn/mock/gridlottery';
+    //var ctx = 'http://192.168.170.16:8415/mock/gridlottery';
+    //    var baseUrl = "http://wx.4ggogo.com/lottery/assets/imgs/";
+    var baseUrl = "../assets/imgs/";
+</script>
+<!--<script src="../assets/js/module.min.js"></script>-->
+<!--<script src="../assets/js/lottery.min.js"></script>-->
+
+</body>
+</html>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.shop.dao.ShopProductMapper">
+	<resultMap id="BaseResultMap" type="com.shop.model.ShopProduct">
+		<id column="id" property="id" jdbcType="BIGINT" />
+		<result column="product_id" property="productId" jdbcType="BIGINT" />
+		<result column="product_name" property="productName" jdbcType="VARCHAR" />
+		<result column="merchant_id" property="merchantId" jdbcType="BIGINT" />
+		<result column="catalog_id" property="catalogId" jdbcType="BIGINT" />
+		<result column="price" property="price" jdbcType="DECIMAL" />
+		<result column="inventory" property="inventory" jdbcType="INTEGER" />
+		<result column="selled_num" property="selledNum" jdbcType="INTEGER" />
+		<result column="title_picture" property="titlePicture"
+			jdbcType="VARCHAR" />
+		<result column="logo_picture" property="logoPicture" jdbcType="VARCHAR" />
+		<result column="onsell" property="onsell" jdbcType="INTEGER" />
+		<result column="onsell_start_time" property="onsellStartTime"
+			jdbcType="TIMESTAMP" />
+		<result column="onsell_end_time" property="onsellEndTime"
+			jdbcType="TIMESTAMP" />
+		<result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+		<result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+		<result column="delete_flag" property="deleteFlag" jdbcType="INTEGER" />
+		<result column="market_price" property="marketPrice" jdbcType="DECIMAL" />
+		<result column="cost_price" property="costPrice" jdbcType="DECIMAL" />
+		<result column="num_limit" property="numLimit" jdbcType="INTEGER" />
+	</resultMap>
+	<resultMap id="ResultMapWithBLOBs" type="com.shop.model.ShopProduct"
+		extends="BaseResultMap">
+		<result column="info" property="info" jdbcType="LONGVARCHAR" />
+	</resultMap>
+	<sql id="Base_Column_List">
+		id, product_id, product_name, merchant_id, catalog_id,
+		price, inventory,
+		selled_num,title_picture,logo_picture,onsell,
+		onsell_start_time, onsell_end_time, create_time, update_time,
+		delete_flag,info,market_price,cost_price,num_limit
+	</sql>
+	<sql id="Blob_Column_List">
+		info
+	</sql>
+	<select id="selectByProductId" resultMap="ResultMapWithBLOBs"
+		parameterType="java.lang.Long">
+		select
+		<include refid="Base_Column_List" />
+		,
+		<include refid="Blob_Column_List" />
+		from shop_product
+		where product_id = #{productId,jdbcType=BIGINT} AND delete_flag=0
+	</select>
+	<!--未删除商品分页查询（总记录数量） -->
+	<select id="queryPaginationProductCount" resultType="java.lang.Integer"
+		parameterType="com.shop.model.ProductQuery">
+		SELECT count(*)
+		FROM shop_product T
+		WHERE 1=1
+		<if test="merchantId!=null">
+			AND T.merchant_id=#{merchantId,jdbcType=BIGINT}
+		</if>
+		<if test="productName!=null">
+			AND T.product_name LIKE '%{productName}%'
+		</if>
+		<if test="parentCatalogId !=null">
+			AND EXISTS (SELECT catalog_id FROM mall_catalog C WHERE
+			C.parent_catalog_id=#{parentCatalogId,jdbcType=BIGINT} AND
+			T.catalog_id=C.catalog_id )
+		</if>
+		<if test="onsellStartTime!=null">
+			AND T.create_time
+			&gt;=#{onsellStartTime,jdbcType=TIMESTAMP}
+		</if>
+		<if test="onsellEndTime!=null">
+			AND T.create_time &lt;=#{onsellEndTime,jdbcType=TIMESTAMP}
+		</if>
+		AND T.delete_flag=0
+	</select>
+	<!--未删除商品分页查询 前后台通用 -->
+	<select id="queryPaginationProductPage" resultMap="ResultMapWithBLOBs"
+		parameterType="com.shop.model.ProductQuery">
+		SELECT
+		<include refid="Base_Column_List" />
+		,
+		<include refid="Blob_Column_List" />
+		FROM shop_product T
+		WHERE 1=1
+		<if test="merchantId!=null">
+			AND T.merchant_id=#{merchantId,jdbcType=BIGINT}
+		</if>
+		<if test="productName!=null">
+			AND T.product_name LIKE '%{productName}%'
+		</if>
+		<if test="parentCatalogId !=null">
+			AND EXISTS (SELECT catalog_id FROM mall_catalog C WHERE
+			C.parent_catalog_id=#{parentCatalogId,jdbcType=BIGINT} AND
+			T.catalog_id=C.catalog_id )
+		</if>
+		<if test="onsellStartTime!=null">
+			AND T.create_time
+			&gt;=#{onsellStartTime,jdbcType=TIMESTAMP}
+		</if>
+		<if test="onsellEndTime!=null">
+			AND T.create_time &lt;=#{onsellEndTime,jdbcType=TIMESTAMP}
+		</if>
+		AND T.delete_flag=0
+		<if test="sort_keyword !=null">
+			ORDER BY ${sort_keyword}
+		</if>
+		LIMIT #{iPageIndex},#{iPageSize}
+	</select>
+	<!-- 推荐商品查询 -->
+	<select id="queryPromoteProductList" parameterType="java.util.Map"
+		resultMap="BaseResultMap">
+		SELECT
+		<include refid="Base_Column_List" />
+		,
+		<include refid="Blob_Column_List" />
+		FROM shop_product T
+		WHERE 1=1
+			AND T.onsell = 0
+			AND T.delete_flag = 0
+			And T.inventory > 0
+		ORDER BY T.inventory DESC LIMIT #{limit}
+	</select>
+
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+		delete from
+		shop_product
+		where id = #{id,jdbcType=BIGINT}
+	</delete>
+	<insert id="insert" parameterType="com.shop.model.ShopProduct">
+		insert into shop_product (id,
+		product_id, product_name,
+		merchant_id, catalog_id, price,
+		inventory,
+		selled_num,title_picture,logo_picture,onsell, onsell_start_time,
+		onsell_end_time, create_time, update_time,
+		delete_flag, info,market_price,cost_price,num_limit)
+		values
+		(#{id,jdbcType=BIGINT}, #{productId,jdbcType=BIGINT},
+		#{productName,jdbcType=VARCHAR},
+		#{merchantId,jdbcType=BIGINT},
+		#{catalogId,jdbcType=BIGINT}, #{price,jdbcType=DECIMAL},
+		#{inventory,jdbcType=INTEGER}, #{selledNum,jdbcType=INTEGER},
+		#{titlePicture,jdbcType=VARCHAR},#{logoPicture,jdbcType=VARCHAR},
+		#{onsell,jdbcType=INTEGER},
+		#{onsellStartTime,jdbcType=TIMESTAMP},
+		#{onsellEndTime,jdbcType=TIMESTAMP}, #{createTime,jdbcType=TIMESTAMP},
+		#{updateTime,jdbcType=TIMESTAMP},
+		#{deleteFlag,jdbcType=INTEGER},
+		#{info,jdbcType=LONGVARCHAR},
+	    #{marketPrice,jdbcType=DECIMAL},
+		#{costPrice,jdbcType=DECIMAL},
+		#{numLimit,jdbcType=INTEGER},)
+	</insert>
+	<update id="updateByProductId" parameterType="com.shop.model.ShopProduct">
+		update shop_product
+		<set>
+			<if test="productName != null">
+				product_name = #{productName,jdbcType=VARCHAR},
+			</if>
+			<if test="merchantId != null">
+				merchant_id = #{merchantId,jdbcType=BIGINT},
+			</if>
+			<if test="catalogId != null">
+				catalog_id = #{catalogId,jdbcType=BIGINT},
+			</if>
+			<if test="price != null">
+				price = #{price,jdbcType=DECIMAL},
+			</if>
+			<if test="inventory != null">
+				inventory = #{inventory,jdbcType=INTEGER},
+			</if>
+			<if test="selledNum != null">
+				selled_num = #{selledNum,jdbcType=INTEGER},
+			</if>
+			<if test="titlePicture != null">
+				title_picture = #{titlePicture,jdbcType=VARCHAR},
+			</if>
+			<if test="logoPicture != null">
+				logo_picture = #{logoPicture,jdbcType=VARCHAR},
+			</if>
+			<if test="onsell != null">
+				onsell = #{onsell,jdbcType=INTEGER},
+			</if>
+			<if test="onsellStartTime != null">
+				onsell_start_time =
+				#{onsellStartTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="onsellEndTime != null">
+				onsell_end_time = #{onsellEndTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="createTime != null">
+				create_time = #{createTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="updateTime != null">
+				update_time = #{updateTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="deleteFlag != null">
+				delete_flag = #{deleteFlag,jdbcType=INTEGER},
+			</if>
+			<if test="info != null">
+				info = #{info,jdbcType=LONGVARCHAR},
+			</if>
+			<if test="marketPrice != null">
+				market_price = #{marketPrice,jdbcType=DECIMAL},
+			</if>
+			<if test="costPrice != null">
+				cost_price = #{costPrice,jdbcType=DECIMAL},
+			</if>
+			<if test="numLimit != null">
+				num_limit = #{numLimit,jdbcType=INTEGER},
+			</if>
+		</set>
+		where product_id = #{productId,jdbcType=BIGINT}
+	</update>
+</mapper>

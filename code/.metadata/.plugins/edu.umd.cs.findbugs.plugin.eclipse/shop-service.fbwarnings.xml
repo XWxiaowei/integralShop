@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="1" timestamp="1490668020578" analysisTimestamp="1490668019178" release="">
+  <Project projectName="shop-service">
+    <Jar>E:\&#31169;&#27963;\integralShop\code\shop-platform\shop-service\target\test-classes</Jar>
+    <Jar>E:\&#31169;&#27963;\integralShop\code\shop-platform\shop-service\target\classes</Jar>
+    <AuxClasspathEntry>E:\&#31169;&#27963;\integralShop\code\shop-platform\shop-service\target\classes</AuxClasspathEntry>
+    <AuxClasspathEntry>E:\&#31169;&#27963;\integralShop\code\shop-platform\shop-service\target\test-classes</AuxClasspathEntry>
+    <AuxClasspathEntry>E:\&#31169;&#27963;\integralShop\code\shop-platform\shop-dao\target\classes</AuxClasspathEntry>
+    <AuxClasspathEntry>E:\&#31169;&#27963;\integralShop\code\shop-platform\shop-dao\target\test-classes</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\org\springframework\spring-tx\4.1.6.RELEASE\spring-tx-4.1.6.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\org\springframework\spring-beans\4.1.6.RELEASE\spring-beans-4.1.6.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\org\springframework\spring-core\4.1.6.RELEASE\spring-core-4.1.6.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\org\mybatis\mybatis\3.2.2\mybatis-3.2.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\org\mybatis\mybatis-spring\1.2.0\mybatis-spring-1.2.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\mysql\mysql-connector-java\5.1.9\mysql-connector-java-5.1.9.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\org\springframework\spring-jdbc\4.1.6.RELEASE\spring-jdbc-4.1.6.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\com\alibaba\druid\1.0.28\druid-1.0.28.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\junit\junit\4.11\junit-4.11.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\org\springframework\spring-context-support\4.1.6.RELEASE\spring-context-support-4.1.6.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\org\springframework\spring-context\4.1.6.RELEASE\spring-context-4.1.6.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\org\springframework\spring-aop\4.1.6.RELEASE\spring-aop-4.1.6.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\org\springframework\spring-expression\4.1.6.RELEASE\spring-expression-4.1.6.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\org\springframework\spring-test\4.1.6.RELEASE\spring-test-4.1.6.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>E:\&#31169;&#27963;\integralShop\code\shop-platform\shop-util\target\classes</AuxClasspathEntry>
+    <AuxClasspathEntry>E:\&#31169;&#27963;\integralShop\code\shop-platform\shop-util\target\test-classes</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\com\alibaba\fastjson\1.2.17\fastjson-1.2.17.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\org\slf4j\slf4j-api\1.7.21\slf4j-api-1.7.21.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\javax\servlet\javax.servlet-api\3.0.1\javax.servlet-api-3.0.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jdk1.8.0_91\jre\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>E:\&#31169;&#27963;\integralShop\code\shop-platform\shop-service\src\test\java</SrcDir>
+    <SrcDir>E:\&#31169;&#27963;\integralShop\code\shop-platform\shop-service\src\main\java</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sun, 26 Mar 2017 22:37:17 +0800" total_classes="6" referenced_classes="38" total_bugs="0" total_size="18" num_packages="4" java_version="1.8.0_91" vm_version="25.91-b14" cpu_seconds="4.34" clock_seconds="1.40" peak_mbytes="468.00" alloc_mbytes="455.50" gc_seconds="0.02">
+    <PackageStats package="com.shop" total_bugs="0" total_types="1" total_size="9">
+      <ClassStats class="com.shop.AppTest" sourceFile="AppTest.java" interface="false" size="9" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.shop.service" total_bugs="0" total_types="2" total_size="2">
+      <ClassStats class="com.shop.service.ShopAddressService" sourceFile="ShopAddressService.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="com.shop.service.ShopCatalogService" sourceFile="ShopCatalogService.java" interface="true" size="1" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.shop.service.admin" total_bugs="0" total_types="1" total_size="1">
+      <ClassStats class="com.shop.service.admin.AdministerService1" sourceFile="AdministerService1.java" interface="true" size="1" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.shop.service.impl" total_bugs="0" total_types="2" total_size="6">
+      <ClassStats class="com.shop.service.impl.ShopAddressServiceImpl" sourceFile="ShopAddressServiceImpl.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="com.shop.service.impl.ShopCatalogServiceImpl" sourceFile="ShopCatalogServiceImpl.java" interface="false" size="3" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="406" invocations="359" avgMicrosecondsPerInvocation="1133" maxMicrosecondsPerInvocation="33404" standardDeviationMircosecondsPerInvocation="3460"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="198" invocations="354" avgMicrosecondsPerInvocation="560" maxMicrosecondsPerInvocation="16387" standardDeviationMircosecondsPerInvocation="1177"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="148" invocations="2" avgMicrosecondsPerInvocation="74268" maxMicrosecondsPerInvocation="126475" standardDeviationMircosecondsPerInvocation="52207"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="89" invocations="38" avgMicrosecondsPerInvocation="2343" maxMicrosecondsPerInvocation="16727" standardDeviationMircosecondsPerInvocation="3694"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="62" invocations="80" avgMicrosecondsPerInvocation="780" maxMicrosecondsPerInvocation="5303" standardDeviationMircosecondsPerInvocation="1067"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="53" invocations="38" avgMicrosecondsPerInvocation="1409" maxMicrosecondsPerInvocation="7751" standardDeviationMircosecondsPerInvocation="1955"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="44" invocations="5" avgMicrosecondsPerInvocation="8930" maxMicrosecondsPerInvocation="43851" standardDeviationMircosecondsPerInvocation="17461"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="35" invocations="38" avgMicrosecondsPerInvocation="926" maxMicrosecondsPerInvocation="16580" standardDeviationMircosecondsPerInvocation="2685"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1490668020578" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

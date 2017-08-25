@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.shop.dao.ShopAddressMapper">
+	<resultMap id="BaseResultMap" type="com.shop.model.ShopAddress">
+		<id column="id" property="id" jdbcType="BIGINT" />
+		<result column="address_id" property="addressId" jdbcType="BIGINT" />
+		<result column="user_id" property="userId" jdbcType="BIGINT" />
+		<result column="receiver_name" property="receiverName"
+			jdbcType="VARCHAR" />
+		<result column="receiver_phone" property="receiverPhone"
+			jdbcType="VARCHAR" />
+		<result column="email" property="email" jdbcType="VARCHAR" />
+		<result column="receiver_address" property="receiverAddress"
+			jdbcType="VARCHAR" />
+		<result column="province" property="province" jdbcType="VARCHAR" />
+		<result column="city" property="city" jdbcType="VARCHAR" />
+		<result column="area" property="area" jdbcType="VARCHAR" />
+		<result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+		<result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+		<result column="delete_flag" property="deleteFlag" jdbcType="INTEGER" />
+	</resultMap>
+	<sql id="Base_Column_List">
+		id, address_id, user_id, receiver_name, receiver_phone, email,
+		receiver_address, province,
+		city, area, create_time, update_time, delete_flag
+	</sql>
+	<select id="selectByAddressId" resultMap="BaseResultMap"
+		parameterType="java.lang.Long">
+		select
+		<include refid="Base_Column_List" />
+		from shop_address
+		where address_id = #{addressId,jdbcType=BIGINT} AND delete_flag=0
+	</select>
+	<insert id="insert" parameterType="com.shop.model.ShopAddress">
+		insert into shop_address (id, address_id, user_id,
+		receiver_name, receiver_phone, email,
+		receiver_address, province, city,
+		area, create_time, update_time,
+		delete_flag)
+		values (#{id,jdbcType=BIGINT}, #{addressId,jdbcType=BIGINT},
+		#{userId,jdbcType=BIGINT},
+		#{receiverName,jdbcType=VARCHAR}, #{receiverPhone,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR},
+		#{receiverAddress,jdbcType=VARCHAR}, #{province,jdbcType=VARCHAR},
+		#{city,jdbcType=VARCHAR},
+		#{area,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP},
+		#{deleteFlag,jdbcType=INTEGER})
+	</insert>
+	<update id="updateByAddressId" parameterType="com.shop.model.ShopAddress">
+		update shop_address
+		<set>
+			<if test="userId != null">
+				user_id = #{userId,jdbcType=BIGINT},
+			</if>
+			<if test="receiverName != null">
+				receiver_name = #{receiverName,jdbcType=VARCHAR},
+			</if>
+			<if test="receiverPhone != null">
+				receiver_phone = #{receiverPhone,jdbcType=VARCHAR},
+			</if>
+			<if test="email != null">
+				email = #{email,jdbcType=VARCHAR},
+			</if>
+			<if test="receiverAddress != null">
+				receiver_address = #{receiverAddress,jdbcType=VARCHAR},
+			</if>
+			<if test="province != null">
+				province = #{province,jdbcType=VARCHAR},
+			</if>
+			<if test="city != null">
+				city = #{city,jdbcType=VARCHAR},
+			</if>
+			<if test="area != null">
+				area = #{area,jdbcType=VARCHAR},
+			</if>
+			<if test="createTime != null">
+				create_time = #{createTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="updateTime != null">
+				update_time = #{updateTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="deleteFlag != null">
+				delete_flag = #{deleteFlag,jdbcType=INTEGER},
+			</if>
+		</set>
+		where address_id = #{addressId,jdbcType=BIGINT}
+	</update>
+	<select id="selectByUserId">
+	 SELECT 
+	 <include refid="Base_Column_List"/>
+	 FROM shop_address
+	 WHERE user_id=#{userId,jdbcType=BIGINT} AND delete_flag=0
+	</select>
+</mapper>

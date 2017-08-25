@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="1" timestamp="1490667943195" analysisTimestamp="1490667939579" release="">
+  <Project projectName="shop-admin">
+    <Jar>E:\&#31169;&#27963;\integralShop\code\shop-platform\shop-admin\target\classes</Jar>
+    <Jar>E:\&#31169;&#27963;\integralShop\code\shop-platform\shop-admin\target\test-classes</Jar>
+    <AuxClasspathEntry>E:\&#31169;&#27963;\integralShop\code\shop-platform\shop-admin\target\classes</AuxClasspathEntry>
+    <AuxClasspathEntry>E:\&#31169;&#27963;\integralShop\code\shop-platform\shop-admin\target\test-classes</AuxClasspathEntry>
+    <AuxClasspathEntry>E:\&#31169;&#27963;\integralShop\code\shop-platform\shop-service\target\classes</AuxClasspathEntry>
+    <AuxClasspathEntry>E:\&#31169;&#27963;\integralShop\code\shop-platform\shop-service\target\test-classes</AuxClasspathEntry>
+    <AuxClasspathEntry>E:\&#31169;&#27963;\integralShop\code\shop-platform\shop-dao\target\classes</AuxClasspathEntry>
+    <AuxClasspathEntry>E:\&#31169;&#27963;\integralShop\code\shop-platform\shop-dao\target\test-classes</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\org\springframework\spring-tx\4.1.6.RELEASE\spring-tx-4.1.6.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\org\springframework\spring-beans\4.1.6.RELEASE\spring-beans-4.1.6.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\org\springframework\spring-core\4.1.6.RELEASE\spring-core-4.1.6.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\org\mybatis\mybatis\3.2.2\mybatis-3.2.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\org\mybatis\mybatis-spring\1.2.0\mybatis-spring-1.2.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\mysql\mysql-connector-java\5.1.9\mysql-connector-java-5.1.9.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\org\springframework\spring-jdbc\4.1.6.RELEASE\spring-jdbc-4.1.6.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\com\alibaba\druid\1.0.28\druid-1.0.28.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\junit\junit\4.11\junit-4.11.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\org\springframework\spring-context-support\4.1.6.RELEASE\spring-context-support-4.1.6.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\org\springframework\spring-context\4.1.6.RELEASE\spring-context-4.1.6.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\org\springframework\spring-aop\4.1.6.RELEASE\spring-aop-4.1.6.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\org\springframework\spring-expression\4.1.6.RELEASE\spring-expression-4.1.6.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\org\springframework\spring-test\4.1.6.RELEASE\spring-test-4.1.6.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>E:\&#31169;&#27963;\integralShop\code\shop-platform\shop-util\target\classes</AuxClasspathEntry>
+    <AuxClasspathEntry>E:\&#31169;&#27963;\integralShop\code\shop-platform\shop-util\target\test-classes</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\com\alibaba\fastjson\1.2.17\fastjson-1.2.17.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\org\slf4j\slf4j-api\1.7.21\slf4j-api-1.7.21.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\Javam2\m2\repository\javax\servlet\javax.servlet-api\3.0.1\javax.servlet-api-3.0.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\apache-tomcat-7.0.70\lib\annotations-api.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\apache-tomcat-7.0.70\lib\catalina-ant.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\apache-tomcat-7.0.70\lib\catalina-ha.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\apache-tomcat-7.0.70\lib\catalina-tribes.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\apache-tomcat-7.0.70\lib\catalina.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\apache-tomcat-7.0.70\lib\ecj-4.4.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\apache-tomcat-7.0.70\lib\el-api.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\apache-tomcat-7.0.70\lib\jasper-el.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\apache-tomcat-7.0.70\lib\jasper.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\apache-tomcat-7.0.70\lib\jsp-api.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\apache-tomcat-7.0.70\lib\servlet-api.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\apache-tomcat-7.0.70\lib\tomcat-api.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\apache-tomcat-7.0.70\lib\tomcat-coyote.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\apache-tomcat-7.0.70\lib\tomcat-dbcp.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\apache-tomcat-7.0.70\lib\tomcat-i18n-es.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\apache-tomcat-7.0.70\lib\tomcat-i18n-fr.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\apache-tomcat-7.0.70\lib\tomcat-i18n-ja.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\apache-tomcat-7.0.70\lib\tomcat-jdbc.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\apache-tomcat-7.0.70\lib\tomcat-util.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\apache-tomcat-7.0.70\lib\tomcat7-websocket.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\apache-tomcat-7.0.70\lib\websocket-api.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jdk1.8.0_91\jre\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>E:\&#31169;&#27963;\integralShop\code\shop-platform\shop-admin\src\main\resources</SrcDir>
+    <SrcDir>E:\&#31169;&#27963;\integralShop\code\shop-platform\shop-admin\src\main\java</SrcDir>
+    <SrcDir>E:\&#31169;&#27963;\integralShop\code\shop-platform\shop-admin\src\test\java</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Tue, 28 Mar 2017 10:25:39 +0800" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_91" vm_version="25.91-b14" cpu_seconds="9.59" clock_seconds="3.62" peak_mbytes="448.81" alloc_mbytes="455.50" gc_seconds="0.08">
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="816" invocations="2" avgMicrosecondsPerInvocation="408129" maxMicrosecondsPerInvocation="587358" standardDeviationMircosecondsPerInvocation="179229"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="264" invocations="153" avgMicrosecondsPerInvocation="1726" maxMicrosecondsPerInvocation="26679" standardDeviationMircosecondsPerInvocation="4469"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1490667943192" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

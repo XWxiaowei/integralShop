@@ -1,0 +1,2 @@
+/** ! hewoxin 2016-09-18 */
+!function(){function a(){$(".count input").attr("value",b),e=c*b,f=d*b,$("#total_price1").html(e),$("#total_flow").html(f),$("#total_price2").html(e),$("#total_count").html(b)}var b=$(".count input").val(),c=$("#per_price").text(),d=$("#per_flow").text(),e=0,f=0;console.log(b),console.log(c),$(".plus").on("tap",function(){b++,a()}),$(".minus").on("tap",function(){b--,(0===b||b<0)&&(b=0),a()})}();

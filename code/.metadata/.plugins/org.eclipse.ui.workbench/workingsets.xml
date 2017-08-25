@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1486694221704_0" label="shop-platform" name="shop-platform">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/shop-service" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/shop-platform" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/shop-admin" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/shop-dao" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/shop-util" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/shop-site" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1490773446095_2" label="selectWorkspace" name="selectWorkspace">
+<item elementID="=shop-service" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=shop-admin" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=shop-dao" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=shop-util" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=shop-site" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1491966431747_3" label="test" name="test"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1486797509400_1" label="Window Working Set" name="Aggregate for window 1486797509400"/>
+<mruList name="test"/>
+<mruList name="selectWorkspace"/>
+</workingSetManager>

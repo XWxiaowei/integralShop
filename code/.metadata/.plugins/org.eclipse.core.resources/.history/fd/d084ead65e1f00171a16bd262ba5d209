@@ -1,0 +1,11 @@
+package com.shop.site.controller;
+
+/**
+ * 功能说明：商品支付
+ * @author xiang.wei
+ *
+ */
+public class CheckOutController extends BaseController {
+	
+	
+}

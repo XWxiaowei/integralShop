@@ -1,0 +1,30 @@
+package com.shop.site.controller;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.shop.service.ShopOrderService;
+
+/**
+ * 功能说明：商品支付
+ * 
+ * @author xiang.wei
+ *
+ */
+@Controller
+public class CheckOutController extends BaseController {
+	@Autowired
+	private ShopOrderService orderService;
+
+	@RequestMapping(value = "/index")
+	public String checkOut(String productId, HttpServletRequest request,
+			HttpServletResponse response, Model model) {
+		return null;
+	}
+
+}

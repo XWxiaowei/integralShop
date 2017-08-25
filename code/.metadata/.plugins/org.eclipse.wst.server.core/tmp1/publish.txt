@@ -1,0 +1,6 @@
+#Tomcat publish data
+#Sun Apr 16 10:54:28 CST 2017
+org.eclipse.jst.j2ee.server\:shop-dao=WEB-INF/lib/shop-dao-1.0.0.jar
+org.eclipse.jst.jee.server\:/binary\:D\:\\Javam2\\m2\\repository\\org\\springframework\\spring-web\\4.1.6.RELEASE\\spring-web-4.1.6.RELEASE.jar=WEB-INF/lib/spring-web-4.1.6.RELEASE.jar
+org.eclipse.jst.j2ee.server\:shop-util=WEB-INF/lib/shop-util-1.0.0.jar
+org.eclipse.jst.j2ee.server\:shop-service=WEB-INF/lib/shop-service-1.0.0.jar

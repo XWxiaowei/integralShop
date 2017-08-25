@@ -1,0 +1,122 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.shop</groupId>
+	<artifactId>shop-platform</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+	<name>shop-platform</name>
+	<url>http://maven.apache.org</url>
+
+	<modules>
+		<module>shop-site</module>
+		<module>shop-admin</module>
+		<module>shop-service</module>
+		<module>shop-dao</module>
+		<module>shop-util</module>
+	</modules>
+
+	<properties>
+		<shop.version>1.0.0</shop.version>
+		<jdk.version>1.7</jdk.version>
+		<spring.version>4.1.6.RELEASE</spring.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+
+	<dependencies>
+		<!-- spring核心包 -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<!-- spring mvc相关包 -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<!-- mybatis相关包 -->
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+			<version>3.2.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis-spring</artifactId>
+			<version>1.2.0</version>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.9</version>
+		</dependency>
+
+		<!--子工程依赖 -->
+	<!-- 	<dependency>
+			<groupId>com.shop</groupId>
+			<artifactId>shop-site</artifactId>
+			<version>${shop.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.shop</groupId>
+			<artifactId>shop-admin</artifactId>
+			<version>${shop.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.shop</groupId>
+			<artifactId>shop-service</artifactId>
+			<version>${shop.version}</version>
+		</dependency>-->
+		<!-- <dependency>
+			<groupId>com.shop</groupId>
+			<artifactId>shop-util</artifactId>
+			<version>${shop.version}</version>
+		</dependency> -->
+		<dependency>
+			<groupId>com.shop</groupId>
+			<artifactId>shop-dao</artifactId>
+			<version>${shop.version}</version>
+		</dependency>  
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+</project>

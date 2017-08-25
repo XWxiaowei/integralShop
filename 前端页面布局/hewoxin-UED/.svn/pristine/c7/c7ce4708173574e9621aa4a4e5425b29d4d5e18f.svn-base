@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title></title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../assets/css/hewoxin.min.css"/>
+</head>
+<body>
+<div class="container-fluid" style="padding-top: 0;">
+    <div class="row">
+        <div class="col-xs-12 text-center order_banner">商品订单</div>
+    </div>
+    <div class="row order_detail">
+        <div class="col-xs-12">
+            <a href="allOrder.html">
+                <div class="col-xs-4 pull-right all_order all_order_disable text-center">全部</div>
+            </a>
+            <a href="payOrder.html">
+                <div class="col-xs-4 pull-right pay_order text-center">待付款</div>
+            </a>
+        </div>
+    </div>
+
+    <div class="order_list">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <div class="row border_bottom">
+                    <div class="col-xs-8">订单号：1123344343</div>
+                    <div class="col-xs-4 text-right">待付款</div>
+                </div>
+                <a href="orderDetail.html">
+                    <div class="row order_item">
+                        <div class="col-xs-4">
+                            <img src="../assets/imgs/more.PNG">
+                        </div>
+                        <div class="col-xs-8 prod_into">
+                            <p class="prod-title">阳光牛奶线上预订电子券（100元）</p>
+                            <p class="prod-expr">使用范围：阳光牛奶-天目山路店</p>
+                            <p class="prod-expr">数量：1</p>
+                            <p class="prod-expr text-right">优惠信息：赠送100流量币</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="row border_top">
+                    <div class="col-xs-8">有效期：2016/7/20-2017/7/20</div>
+                    <div class="col-xs-4 text-center">合计：￥95</div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row border_bottom">
+                    <div class="col-xs-8">订单号：1123344343</div>
+                    <div class="col-xs-4 text-right">待付款</div>
+                </div>
+                <a href="orderDetail.html">
+                    <div class="row order_item">
+                        <div class="col-xs-4">
+                            <img src="../assets/imgs/more.PNG">
+                        </div>
+                        <div class="col-xs-8 prod_into">
+                            <p class="prod-title">阳光牛奶线上预订电子券（100元）</p>
+                            <p class="prod-expr">使用范围：阳光牛奶-天目山路店</p>
+                            <p class="prod-expr">数量：1</p>
+                            <p class="prod-expr text-right">优惠信息：赠送100流量币</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="row border_top">
+                    <div class="col-xs-8">有效期：2016/7/20-2017/7/20</div>
+                    <div class="col-xs-4 text-center">合计：￥95</div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row border_bottom">
+                    <div class="col-xs-8">订单号：1123344343</div>
+                    <div class="col-xs-4 text-right">可使用</div>
+                </div>
+                <a href="orderDetail.html">
+                    <div class="row order_item">
+                        <div class="col-xs-4">
+                            <img src="../assets/imgs/more.PNG">
+                        </div>
+                        <div class="col-xs-8 prod_into">
+                            <p class="prod-title">阳光牛奶线上预订电子券（100元）</p>
+                            <p class="prod-expr">使用范围：阳光牛奶-天目山路店</p>
+                            <p class="prod-expr">数量：1</p>
+                            <p class="prod-expr text-right">优惠信息：赠送100流量币</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="row border_top">
+                    <div class="col-xs-8">有效期：2016/7/20-2017/7/20</div>
+                    <div class="col-xs-4 text-center">合计：￥95</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script src="../assets/js/zepto.min.js"></script>
+
+<script>
+    //    var ctx = "${contextPath}";
+    var ctx = 'http://mock.cqb325.cn/mock/gridlottery';
+    //var ctx = 'http://192.168.170.16:8415/mock/gridlottery';
+    //    var baseUrl = "http://wx.4ggogo.com/lottery/assets/imgs/";
+    var baseUrl = "../assets/imgs/";
+</script>
+
+</body>
+</html>

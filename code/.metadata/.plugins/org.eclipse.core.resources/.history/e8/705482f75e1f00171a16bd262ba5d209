@@ -1,0 +1,19 @@
+package com.shop.site.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import com.shop.service.ShopOrderService;
+
+/**
+ * 功能说明：商品支付
+ * @author xiang.wei
+ *
+ */
+@Controller
+public class CheckOutController extends BaseController {
+	@Autowired
+	private ShopOrderService orderService;
+	
+	
+}

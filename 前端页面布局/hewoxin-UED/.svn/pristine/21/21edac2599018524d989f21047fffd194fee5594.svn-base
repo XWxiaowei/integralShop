@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title></title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../assets/css/hewoxin.min.css"/>
+</head>
+<body>
+<div class="container-fluid" style="font-size: 1.2rem;">
+    <div class="row module_top">
+        <div class="col-xs-12">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-8 order_num">订单号：1123344343</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a href="detail.html">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <img src="../assets/imgs/more.PNG">
+                            </div>
+                            <div class="col-xs-8 prod_into">
+                                <p class="prod-title">沃尔玛超市100元代金券</p>
+                                <p class="prod-expr">有效期：2016/7/20-2017/7/20</p>
+                                <p class="text-right prod_prize">￥95</p>
+                            </div>
+                            <div class="col-xs-12 text-right yh-text">
+                                优惠信息：赠送100流量币
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a href="detail.html">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <img src="../assets/imgs/more.PNG">
+                            </div>
+                            <div class="col-xs-8 prod_into">
+                                <p class="prod-title">95元购100元阳光牛奶代金券</p>
+                                <p class="prod-expr">有效期：2016/7/20-2017/7/20</p>
+                                <p class="prod-expr">使用范围：阳光牛奶-天目山路店 </p>
+                                <p class="prod-expr">优惠信息：送150M流量币</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <p>下单时间：2016.6.18 15：13：56</p>
+            <p>支付时间：2016.6.18 15：13：56</p>
+            <p>发货时间：2016.6.18 15：13：56</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="border_top">
+                <p>单价：12.56元</p>
+                <p>购买数量：1</p>
+                <p>总价：12.56元</p>
+                <p>赠送流量币：150个</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="border_top">
+                <p>收货人：张三</p>
+                <p>收货手机号：13222222233</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="border_top">
+                <p>电子券收货信息：</p>
+                <p>电子券信息将在付款后自动发送到您的收货手机号，如果24小时内未收到，请联系本系统客服。</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <a href="#">
+                <div class="col-xs-6 text-center pay_btn" id="btn_success">已支付成功/立即支付</div>
+            </a>
+
+            <div class="col-xs-4 text-center pay_btn" id="btn_cancel">取消订单</div>
+
+        </div>
+    </div>
+</div>
+
+<div id="popup_cancel" class="modal fade text-center" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p class="tip-font">确认取消订单？</p>
+            </div>
+            <a data-dismiss="modal">
+                <div class="col-xs-6 text-center styleBtn confirm" style="float:left;">确 定</div>
+            </a>
+            <a data-dismiss="modal">
+                <div class="col-xs-6 text-center styleBtn close-font cancel">取 消</div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/zepto.min.js"></script>
+
+<script>
+    //    var ctx = "${contextPath}";
+    var ctx = 'http://mock.cqb325.cn/mock/gridlottery';
+    //var ctx = 'http://192.168.170.16:8415/mock/gridlottery';
+    //    var baseUrl = "http://wx.4ggogo.com/lottery/assets/imgs/";
+    var baseUrl = "../assets/imgs/";
+</script>
+<script src="../assets/js/address.min.js"></script>
+<script src="../assets/js/modal.min.js"></script>
+</body>
+</html>

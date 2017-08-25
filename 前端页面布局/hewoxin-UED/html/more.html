@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title></title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../assets/css/hewoxin.min.css"/>
+</head>
+<body>
+<div class="module_top" style="padding-top: 10px; border-bottom: 1px solid #eae8e8;">
+    <div class="search-wrap">
+        <input type="search" placeholder="热门搜索：超市">
+        <span class="icon_search"><img src="../assets/imgs/search.png"></span>
+    </div>
+</div>
+<div>
+    <div class="row module_select" style="margin-left: 0;margin-right: 0;">
+        <div class="col-xs-6 text-center" style="border-right: 1px solid #eae8e8;">
+            <div class="btn-group btn-group-sm">
+                <input type="hidden">
+                <button type="button" class="btn" data-toggle="dropdown">分类</button>
+                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li data-value="1"><a href="#">购物卡</a></li>
+                    <li data-value="2"><a href="#">购物卡</a></li>
+                    <li data-value="3"><a href="#">购物卡</a></li>
+                    <li data-value="4"><a href="#">购物卡</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-6 text-center">
+            <div class="btn-group btn-group-sm">
+                <input type="hidden" name="">
+                <button type="button" class="btn">排序</button>
+                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" style="left: auto; right: 0;">
+                    <li data-value="1"><a href="#">1</a></li>
+                    <li data-value="2"><a href="#">2</a></li>
+                    <li data-value="3"><a href="#">3</a></li>
+                    <li data-value="4"><a href="#">4</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="prod_list">
+        <ul class="list-group">
+            <li class="list-item">
+                <a href="detail.html">
+                    <div class="prod_img text-center">
+                        <img src="../assets/imgs/more.PNG">
+                    </div>
+                    <div class="prod_into">
+                        <p class="prod-title">沃尔玛100元购物卡
+                            <img src="../assets/imgs/arrow.png" style="float: right;width: 4%;"></p>
+                        <p class="prod-expr">有效期：2016/7/20-2017/7/20</p>
+                        <p class="prod-expr">优惠信息：<span class="present">赠送100流量币</span></p>
+                        <p class="prod_price">￥95.00<span class="cost_price">￥100.00</span></p>
+                    </div>
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="detail.html">
+                    <div class="prod_img text-center">
+                        <img src="../assets/imgs/more.PNG">
+                    </div>
+                    <div class="prod_into">
+                        <p class="prod-title">沃尔玛100元购物卡
+                            <img src="../assets/imgs/arrow.png" style="float: right;width: 4%;"></p>
+                        <p class="prod-expr">有效期：2016/7/20-2017/7/20</p>
+                        <p class="prod-expr">优惠信息：<span class="present">赠送100流量币</span></p>
+                        <p class="prod_price">￥95.00<span class="cost_price">￥100.00</span></p>
+                    </div>
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="detail.html">
+                    <div class="prod_img text-center">
+                        <img src="../assets/imgs/more.PNG">
+                    </div>
+                    <div class="prod_into">
+                        <p class="prod-title">沃尔玛50元购物卡
+                            <img src="../assets/imgs/arrow.png" style="float: right;width: 4%;"></p>
+                        <p class="prod-expr">有效期：2016/7/20-2017/7/20</p>
+                        <p class="prod-expr">优惠信息：<span class="present">赠送50流量币</span></p>
+                        <p class="prod_price">￥47.00<span class="cost_price">￥50.00</span></p>
+                    </div>
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="detail.html">
+                    <div class="prod_img text-center">
+                        <img src="../assets/imgs/more.PNG">
+                    </div>
+                    <div class="prod_into">
+                        <p class="prod-title">沃尔玛50元购物卡
+                            <img src="../assets/imgs/arrow.png" style="float: right;width: 4%;"></p>
+                        <p class="prod-expr">有效期：2016/7/20-2017/7/20</p>
+                        <p class="prod-expr">优惠信息：<span class="present">赠送50流量币</span></p>
+                        <p class="prod_price">￥47.00<span class="cost_price">￥50.00</span></p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script src="../assets/js/jquery-1.11.3.min.js"></script>
+
+<script>
+    $(".dropdown-menu").on("click", "a",function(){
+        var parent = $(this).parents(".btn-group");
+        $(".btn", parent).eq(0).html($(this).html());
+        $("input", parent).eq(0).val($(this).parent().data("value"));
+    });
+
+    $(".btn-group").on("click", function(e){
+        var dropdown = $(".dropdown-menu", this);
+        if($(".dropdown-menu:visible").length
+        &&$(".dropdown-menu:visible")[0] != dropdown[0]){
+            $(".dropdown-menu:visible").hide();
+        }
+        $(".dropdown-menu", this).toggle();
+        if($(".dropdown-menu", this).is(":visible")){
+            var select = $(this).find("input").val();
+            $("li.active").removeClass("active");
+            $("li[data-value='"+select+"']", this).addClass("active");
+        }
+    });
+
+    $(document).on("click", function(e){
+        if($(e.target).closest(".btn-group").length){
+            return false;
+        }else{
+            $(".dropdown-menu", this).hide();
+            return true;
+        }
+    });
+</script>
+</body>
+</html>

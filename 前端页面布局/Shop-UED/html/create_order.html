@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="../assets/css/shop.css" rel="stylesheet">
+<title>订单</title>
+</head>
+
+<body>
+<iframe frameborder="0" scrolling="no" width="100%" height="224px" src="top.html"></iframe>
+<div class="wrapper">
+  <div class="cont">
+    <div class="mod pageTitle txt-overflow settings-text_color">
+      <h2>填写并确认订单</h2>
+    </div>
+  </div>
+</div>
+<div class="wrapper">
+  <div class="cont">
+    <div class="mod order-create settings-text_color">
+      <div class="order-create-inner settings-main_border">
+        <h3 class="order-create-title settings-formTitle_background">收货人信息</h3>
+        <div class="order-create-cont settings-main_border" id="yhsd_addressComponent">
+          <div class="yhsd-addressComponent-list" id="yhsd_addressComponent_list" style="display:block;">
+            <ul class="clearfix">
+              <li class="yhsd-addressComponent-list-each settings-main_border"> <a class="yhsd-addressComponent-list-each-link settings-text_color" href="javascript:void(0);" data-index="0">
+                <div class="yhsd-addressComponent-list-each-name settings-main_border"> xx<span>收</span> </div>
+                <div class="yhsd-addressComponent-list-each-area txt-overflow">安徽省安庆市宿松县</div>
+                <div class="yhsd-addressComponent-list-each-tel">123456789</div>
+                <div class="yhsd-addressComponent-list-each-common" style="display:none">常用地址</div>
+                </a> <a href="javascript:void(0);" class="yhsd-addressComponent-list-each-edit settings-link_color">编辑</a> <a  href="javascript:void(0);" class="yhsd-addressComponent-list-each-del settings-link_color">删除</a> </li>
+            </ul>
+          </div>
+          <a class="yhsd-addressComponent-new settings-mainBtn_color settings-mainBtn_background"  href="javascript:void(0);" id="yhsd_addressComponent_newadd"
+          style="display:inline-block;"> 使用新地址 </a>
+          <h4 class="yhsd-addressComponent-title settings-main_border" id="yhsd_addressComponent_newTitle">新增地址</h4>
+          <h4 id="yhsd_addressComponent_edtTitle"
+         class="yhsd-addressComponent-title settings-main_border" style="display:none">编辑地址</h4>
+          <table class="yhsd-addressComponent-table" cellpadding="0" cellspacing="0" border="0" id="yhsd_addressComponent_edit" style="display:table;">
+            <tbody>
+              <tr>
+                <td class="yhsd-addressComponent-key settings-inputImpt_color">*</td>
+                <td class="yhsd-addressComponent-head">收货人</td>
+                <td class="yhsd-addressComponent-ipt"><input class="settings-ipt_border" id="yhsd_addressCompnent_name"  type="text"></td>
+              </tr>
+              <tr>
+                <td class="yhsd-addressComponent-key settings-inputImpt_color">*</td>
+                <td class="yhsd-addressComponent-head">所在地区</td>
+                <td class="yhsd-addressComponent-ipt"><div id="yhsd-addressComponent-area">
+                    <select class="settings-ipt_border settings-text_color">
+                    </select>
+                    <select class="settings-ipt_border settings-text_color">
+                    </select>
+                    <select  class="settings-ipt_border settings-text_color">
+                    </select>
+                  </div></td>
+              </tr>
+              <tr>
+                <td class="yhsd-addressComponent-key settings-inputImpt_color">*</td>
+                <td class="yhsd-addressComponent-head">详细地址</td>
+                <td class="yhsd-addressComponent-ipt"><input class="yhsd-addressComponent-ipt-long settings-ipt_border" id="yhsd-addressComponent-ipt" type="text"></td>
+              </tr>
+              <tr>
+                <td class="yhsd-addressComponent-key settings-inputImpt_color">*</td>
+                <td class="yhsd-addressComponent-head">联系电话</td>
+                <td class="yhsd-addressComponent-ipt"><input class="settings-ipt_border" id="yhsd_addressComponent_phone"></td>
+              </tr>
+              <tr>
+                <td class="yhsd-addressComponent-key">&nbsp;</td>
+                <td class="yhsd-addressComponent-head">邮政编码</td>
+                <td class="yhsd-addressComponent-ipt"><input id="yhsd_addressComponent_zipcode" class="yhsd-addressComponent-ipt settings-ipt_border" type="text"></td>
+              </tr>
+              <tr>
+                <td class="yhsd-addressComponent-key">&nbsp;</td>
+                <td colspan="2" class="yhsd-addressComponent-chk"><label>
+                    <input type="checkbox" id="yhsd_addressComponent_setCommon">
+                    设为常用地址</label></td>
+              </tr>
+            </tbody>
+          </table>
+          <a class="yhsd-addressComponent-confirm settings-mainBtn_color settings-mainBtn_background" id="yhsd_addressComponent_submit" href="javascript:void(0);">保存</a> <a class="yhsd-addressComponent-confirm settings-link_color" href="javascript:void(0);" id="yhsd_addressComponent_cancelsubmit">取消</a> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrapper warpper-payment">
+  <div class="cont">
+    <div class="mod order-create settings-text_color">
+      <div class="order-create-inner settings-main_border">
+        <h3 class="order-create-title settings-formTitle_background">支付方式</h3>
+        <div class="order-create-cont yhsd-paymentComponent" id="yhsd_paymentComponent_require" style="display: none;">
+          <div class="settings-main_border" style="line-height:34px;text-indent:20px;border-top-style:solid;border-top-width:1px;">请先选择“收货人信息”</div>
+        </div>
+        <div class="order-create-cont yhsd-paymentComponent" id="yhsd_paymentComponent" style="">
+          <div class="settings-main_border" style="line-height:34px;text-indent:20px;border-top-width:1px;border-top-style:solid">商家的支付方式尚未准备完成</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrapper">
+  <div class="cont">
+    <div class="mod order-create order-detail settings-text_color">
+      <div class="order-create-inner settings-main_border">
+        <h3 class="order-create-title settings-formTitle_background">商品配送方式 <a>[返回购物车]</a> </h3>
+        <div class="order-create-cont settings-main_border" id="yhsd_shipmentComponent_require" style="display:none"> 请先选择 <span>收货人信息</span> <span>支付方式</span> </div>
+        <div id="yhsd_shipment_content">
+          <div class="order-create-cart">
+            <table class="order-detail-table" cellpadding="0" cellspacing="0" border="0">
+              <tbody>
+                <tr>
+                  <td class="order-detail-table-img settings-main_border"><a class="settings-main_border"><img src="../assets/imgs/s_60x60.jpeg"></a></td>
+                  <td class="order-detail-table-name settings-main_border txt-overflow"><a class="settings-text_color">拉莫德法国原瓶进口红酒干红葡萄酒 原装进口法国红酒 整箱6支装</a></td>
+                  <td class="order-detail-table-uprice settings-main_border"><span class="settings-price_color">￥6666</span><span>x 3</span></td>
+                  <td class="order-detail-table-total settings-main_border"><span class="settings-price_color">￥19998</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrapper">
+  <div class="cont">
+    <div class="mod order-detail settings-text_color">
+      <div class="order-detail-inner">
+        <div class="order-detail-cart settings-main_border">
+          <h3 class="order-create-title settings-formTitle_background settings-main_border">订单概况</h3>
+          <div class="order-detail-footer clearfix" style="border-top:none">
+            <div class="order-detail-spec">
+              <h4></h4>
+              <textarea class="settings-ipt_border" id="yhsd_orderCreate_remark" placeholder="订单补充说明" maxlength="100"></textarea>
+            </div>
+            <table class="order-detail-status" cellpadding="0" cellspacing="0" border="0">
+              <tbody>
+                <tr>
+                  <th><span id="yhsd_orderCreate_quantitly">8</span>件商品，共计：</th>
+                  <td class="settings-price_color">￥<span id="yhsd_orderCreate_itemTotal">103998</span></td>
+                </tr>
+                <tr id="yhsd_orderCreate_shipping">
+                  <th><span>总运费：</span></th>
+                  <td class="settings-price_color">￥<span id="yhsd_orderCreate_shipmentPrice">0</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrapper">
+  <div class="cont">
+    <div class="mod cart-submit setting-text_color">
+      <div class="cart-submit-inner"> <span class="cart-submit-info">订单总计：</span><span class="cart-submit-price settings-price_color">￥<span id="yhsd_orderCreate_totalPrice">87198</span></span><a href="javascript:void(0);" class="cart-submit-button settings-buyBtn_background settings-buyBtn_color" id="yhsd_orderCreate_submit">提交订单</a> </div>
+      <!--cart-submit-inner--> 
+    </div>
+  </div>
+</div>
+</body>
+</html>

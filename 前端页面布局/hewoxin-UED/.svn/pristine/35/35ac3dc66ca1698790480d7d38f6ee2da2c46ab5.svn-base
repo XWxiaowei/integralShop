@@ -1,0 +1,2 @@
+/** ! hewoxin 2016-08-18 */
+!function(){function a(){$(".cancel").on("tap",function(){$("#popup").modal("hide"),$("#popup_cancel").modal("hide")}),$(".confirm").on("tap",function(){$("#popup").modal("hide"),$("#popup_cancel").modal("hide")})}$(".icon_delete").on("tap",function(){$(".mod").addClass("hide"),$(".del").removeClass("hide"),$("#popup").modal("show")}),$("#delete-btn").on("tap",function(){$(".mod").addClass("hide"),$(".del").removeClass("hide"),$("#popup").modal("show")}),$("#btn_cancel").on("tap",function(){$("#popup_cancel").modal("show")}),a()}();
